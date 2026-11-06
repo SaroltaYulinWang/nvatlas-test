@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore a 500-entry English–Chinese NV Atlas test corpus of nominal-to-verb annotations.">
+<title>NV Atlas · Corpus explorer</title>
+<link rel="stylesheet" href="./styles.css">
+<script defer src="./data/corpus.js"></script>
+<script defer src="./app.js"></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="./index.html">NV <span>ATLAS</span></a><span class="edition">TEST CORPUS / 01</span></header>
+<main>
+<section class="intro" aria-labelledby="title">
+<div><p class="eyebrow">ENGLISH → 中文 · NOMINALS TO VERBS</p><h1 id="title">A change of words.<br>A world of meaning.</h1><p class="lede">Explore the NV Atlas test sample: <strong>500 entries</strong> pairing English and Chinese text with English nominal and Chinese verb annotations.</p></div>
+<aside class="sample"><span class="sample-label">FROM THE CORPUS · ENTRY 168</span><div class="word-pair">question <span>→</span> <span lang="zh">问</span></div><p>One annotation. Two languages.</p></aside>
+</section>
+<section class="explorer" aria-labelledby="explorer-title">
+<div class="section-heading"><h2 id="explorer-title">Explore the corpus</h2><a href="./data/NVAtlas-AI-Agent.csv" download>Download CSV ↗</a></div>
+<label for="search">Search English, Chinese, annotations, or entry ID</label>
+<div class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Try “question”, “问”, or an entry ID" autocomplete="off"><button id="clear" type="button">Clear</button></div>
+<div class="results-meta"><p id="count" role="status" aria-live="polite"></p><span>Original corpus order</span></div>
+<div id="entries"></div>
+<div id="empty" hidden><h3>No matching entries</h3><p>Try a shorter phrase, an English nominal, or a Chinese character.</p><button id="reset" type="button">Show all 500 entries</button></div>
+<noscript><p>Enable JavaScript to search and view the entries, or download the complete CSV above.</p></noscript>
+</section>
+</main>
+<footer><div><strong>NV Atlas</strong><p>A 500-entry test sample. Text and annotations are displayed as supplied.</p></div><a href="https://nvatlas.tra.cuhk.edu.hk/" target="_blank" rel="noopener noreferrer">Visit the NV Atlas project ↗</a><p class="privacy">Search runs entirely in your browser. No corpus data is sent to an external service.</p></footer>
+</body>
+</html>
